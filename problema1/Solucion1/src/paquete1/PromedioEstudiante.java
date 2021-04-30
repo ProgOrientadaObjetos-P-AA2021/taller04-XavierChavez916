@@ -9,7 +9,7 @@ package paquete1;
  *
  * @author xavierchavez
  */
-public class DatoEstudiante {
+public class PromedioEstudiante {
 
     private String nombreEstudiante;
     private double calificacionMateria1;
@@ -17,14 +17,14 @@ public class DatoEstudiante {
     private double calificacionMateria3;
     private double promedioCalificacion;
 
-    public DatoEstudiante(String nom, double mat1, double mat2, double mat3) {
+    public PromedioEstudiante(String nom, double mat1, double mat2, double mat3) {
         nombreEstudiante = nom;
         calificacionMateria1 = mat1;
         calificacionMateria2 = mat2;
         calificacionMateria3 = mat3;
     }
 
-    public void establecerNombre(String nom) {
+    public void establecerNombreEstudiante(String nom) {
         nombreEstudiante = nom;
     }
 
@@ -67,12 +67,12 @@ public class DatoEstudiante {
 
     @Override
     public String toString() {
-        String cadena = String.format("Datos Estudiante\n"
+        String cadena = String.format("\tDatos Estudiante\n"
                 + "Nombre del estudiante: %s\n"
-                + "Calificacion de la materia 1 %.2f\n"
-                + "Calificacion de la materia 2 %.2f\n"
-                + "Calificacion de la materia 3 %.2f\n"
-                + "Promedio de Calificaciones %.2f\n",
+                + "Calificacion de la materia 1: %.2f\n"
+                + "Calificacion de la materia 2: %.2f\n"
+                + "Calificacion de la materia 3: %.2f\n"
+                + "Promedio de Calificaciones: %.2f\n",
                 obtenerNombreEstudiante(),
                 obtenerCalificacionMateria1(),
                 obtenerCalificacionMateria2(),
