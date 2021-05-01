@@ -58,7 +58,7 @@ public class Cheque {
     
     @Override
     public String toString() {
-        String cadena = String.format("Datos del Cheque\n"
+        String cadena = String.format("-------Datos del Cheque--------\n"
                 + "Nombre del cliente %s\n"
                 + "Nombre del banco: %s\n"
                 + "Valor del cheque: %.2f\n"

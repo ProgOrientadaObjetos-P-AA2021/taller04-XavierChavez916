@@ -18,16 +18,27 @@ public class Ejecutor {
         String nom = "Xavier Chávez";
         String nomBan = "Banco de Loja";
         double valChe = 1000.45;
-
-        Cheque cheq = new Cheque(nom, nomBan, valChe);
         
-        cheq.establecerNombreCliente(nom);
-        cheq.establecerNombreBanco(nomBan);
-        cheq.establecerValorCheque(valChe);
-        cheq.establecerComisionCobrar();
+        String nom2 = "Dalto Vazquez";
+        String nomBan2 = "Banco de Guayaquil";
+        double valChe2 = 500.45;
 
-        System.out.println(cheq);
+        Cheque cheq1 = new Cheque(nom, nomBan, valChe);
+        cheq1.establecerNombreCliente(nom);
+        cheq1.establecerNombreBanco(nomBan);
+        cheq1.establecerValorCheque(valChe);
+        cheq1.establecerComisionCobrar();
+        System.out.printf("%s\n",cheq1);
 
+        Cheque cheq2 = new Cheque(nom, nomBan, valChe);
+        cheq2.establecerNombreCliente(nom2);
+        cheq2.establecerNombreBanco(nomBan2);
+        cheq2.establecerValorCheque(valChe2);
+        cheq2.establecerComisionCobrar();
+        System.out.printf("\n%s\n",cheq2);
+        
+        
+        
     }
 
 }

@@ -27,7 +27,21 @@ public class Ejecutor {
         auto.establecerAnFabricacion(aFabri);
         auto.establecerValorVehiculo(valVehi);
         auto.establecerValorMatricula();
-        System.out.println(auto);
+        System.out.printf("%s\n",auto);
+        
+        String cedula2 = "1150582755";
+        String marcVehi2 = "PBA-1024";
+        int aFabri2 = 2006;
+        double valVehi2 = 3513.45;
+
+        Automotor auto2 = new Automotor(cedula, marcVehi, aFabri, valVehi);
+
+        auto.establecerCedula(cedula2);
+        auto.establecerMarca(marcVehi2);
+        auto.establecerAnFabricacion(aFabri2);
+        auto.establecerValorVehiculo(valVehi2);
+        auto.establecerValorMatricula();
+        System.out.printf("\n%s\n",auto2);
 
     }
 

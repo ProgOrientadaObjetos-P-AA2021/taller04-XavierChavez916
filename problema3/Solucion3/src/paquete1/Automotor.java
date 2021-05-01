@@ -67,7 +67,7 @@ public class Automotor {
 
     @Override
     public String toString() {
-        String cadena = String.format("Datos del Automotor\n"
+        String cadena = String.format("--------Datos del Automotor-------\n"
                 + "Cedula del dueño: %s\n"
                 + "Marca del vehiculo: %s\n"
                 + "Año de fabricación: %d\n"

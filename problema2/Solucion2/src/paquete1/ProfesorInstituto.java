@@ -67,7 +67,7 @@ public class ProfesorInstituto {
     }
     @Override
     public String toString() {
-        String cadena = String.format("Profesores del Instituto\n"
+        String cadena = String.format("-------Profesores del Instituto--------\n"
                 + "Nombre: %s\n"
                 + "Apellido: %s\n"
                 + "Sueldo Basico: %.2f\n"

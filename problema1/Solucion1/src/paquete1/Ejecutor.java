@@ -31,6 +31,23 @@ public class Ejecutor {
         promEst.establecerPromedioCalificacion();
         
         System.out.println(promEst);
+        
+        String nombreEstudiante2 = "Snider";
+        double caliiMat1 = 8.8;
+        double caliiMat2 = 4.8;
+        double caliiMat3 = 5.8;
+        
+        
+        PromedioEstudiante promEst2 = new PromedioEstudiante(nombreEstudiante, 
+                caliMat1, caliMat2, caliMat3); 
+        
+        promEst2.establecerNombreEstudiante(nombreEstudiante2);
+        promEst2.establecerCalificacionMateria1(caliiMat1);
+        promEst2.establecerCalificacionMateria2(caliiMat2);
+        promEst2.establecerCalificacionMateria3(caliiMat3);
+        promEst2.establecerPromedioCalificacion();
+        
+        System.out.println(promEst2);
     }
     
 }
