@@ -42,7 +42,7 @@ public class Automotor {
     }
 
     public void establecerValorMatricula() {
-        valorMatricula = (2021 - anFabricacion) * ((valorVehiculo * 0.002) / 100);
+        valorMatricula = (2021 - anFabricacion) * (valorVehiculo * 0.002);
     }
 
     public String obtenerCedula() {

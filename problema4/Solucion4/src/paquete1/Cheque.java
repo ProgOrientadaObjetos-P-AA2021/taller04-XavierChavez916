@@ -10,18 +10,18 @@ package paquete1;
  * @author xavierchavez
  */
 public class Cheque {
+
     private String nomCliente;
     private String nomBanco;
     private double valorCheque;
     private double comiCobrar;
-    
-    
-    public Cheque(String nom, String nomBan, double valChe){
+
+    public Cheque(String nom, String nomBan, double valChe) {
         nomCliente = nom;
         nomBanco = nomBan;
         valorCheque = valChe;
     }
-    
+
     public void establecerNombreCliente(String nom) {
         nomCliente = nom;
     }
@@ -33,11 +33,11 @@ public class Cheque {
     public void establecerValorCheque(double valChe) {
         valorCheque = valChe;
     }
-    
-    public void establecerComisionCobrar(){
-        comiCobrar = (valorCheque * 0.003) ;
+
+    public void establecerComisionCobrar() {
+        comiCobrar = (valorCheque * 0.003);
     }
-   
+
     public String obtenerNombreCliente() {
         return nomCliente;
     }
@@ -53,9 +53,7 @@ public class Cheque {
     public double obtenerComisionCobrar() {
         return comiCobrar;
     }
-    
-    
-    
+
     @Override
     public String toString() {
         String cadena = String.format("-------Datos del Cheque--------\n"
@@ -67,8 +65,8 @@ public class Cheque {
                 obtenerNombreBanco(),
                 obtenerValorCheque(),
                 obtenerComisionCobrar());
-                
+
         return cadena;
     }
-    
+
 }
